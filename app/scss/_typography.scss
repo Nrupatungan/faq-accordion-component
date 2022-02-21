@@ -1,0 +1,21 @@
+$KumbhSans: "Kumbh Sans", sans-serif;
+
+body {
+  font-family: $KumbhSans;
+  font-size: 0.75em;
+}
+.heading {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
+  @media #{$mq-1000-up} {
+    text-align: left;
+  }
+}
+.question {
+  font-size: 1.12em;
+}
+.answer {
+  font-size: 1em;
+}

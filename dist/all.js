@@ -1,0 +1,2 @@
+const accordions=document.querySelectorAll(".accordion"),questions=document.querySelectorAll(".question"),ones=document.querySelectorAll(".one");let currentActive=0;function update(){accordions.forEach((c=>{c.classList.remove("accordion-drop")}))}console.log(accordions.length),accordions.forEach((c=>{c.addEventListener("click",(()=>{currentActive++,update(),c.classList.toggle("accordion-drop"),console.log(c),currentActive>1&&(currentActive=0,update()),console.log(currentActive)}))}));
+//# sourceMappingURL=all.js.map

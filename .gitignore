@@ -1,0 +1,8 @@
+#huge files
+design/
+node_modules/
+*.json
+
+#not required
+note.md
+style-guide.md

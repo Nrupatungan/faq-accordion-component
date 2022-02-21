@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  @media #{$mq-640-vh-down} {
+    overflow: visible;
+  }
+  @media #{$mq-768-vh-down} {
+    overflow: visible;
+  }
+}
+.super-container {
+  position: relative;
+  .box {
+    display: none;
+
+    @media #{$mq-1000-up} {
+      display: grid;
+      width: 12rem;
+      position: absolute;
+      top: 37%;
+      left: -13.4%;
+      z-index: 99;
+    }
+  }
+}
+.container {
+  position: relative;
+  background-color: $White;
+  width: 26.5em;
+  padding: 2em;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  @media #{$mq-1000-up} {
+    background: url("../images/bg-pattern-desktop.svg");
+    // background-size: cover;
+    background-size: 60rem;
+    background-repeat: no-repeat;
+    background-position: top -17rem left -39rem;
+    background-color: $White;
+    overflow: hidden;
+    width: 70vw;
+    height: 71vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.hero-image-section-mobile {
+  img {
+    width: 14rem;
+  }
+  .illustration {
+    position: relative;
+    top: -7.8rem;
+    left: 9%;
+    z-index: 1;
+  }
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 15%;
+  }
+
+  @media #{$mq-1000-up} {
+    display: none;
+  }
+}
+.hero-image-section-desktop {
+  display: none;
+  @media #{$mq-1000-up} {
+    display: block;
+    margin-top: 1rem;
+    .illustration {
+      width: 23rem;
+      position: absolute;
+      top: 23%;
+      left: -5%;
+      z-index: 1;
+    }
+  }
+}
+.hero-text-section {
+  margin-bottom: 1rem;
+  @media #{$mq-1000-up} {
+    margin-right: 4rem;
+    margin-bottom: -5rem;
+  }
+}
+.accordion {
+  height: 2.81rem;
+  overflow: hidden;
+  border-bottom: 1px solid $Lightgrayishblue;
+  transition: height 0.3s ease;
+  cursor: pointer;
+  .arrow {
+    transition: transform 0.4s ease;
+  }
+}
+.accordion-drop {
+  height: 6rem;
+  .question {
+    color: $Verydarkdesaturatedblue;
+    font-weight: 700;
+  }
+  .arrow {
+    transform: rotate(-180deg);
+  }
+}
+.question-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.81rem;
+  margin-bottom: 0.7rem;
+}

@@ -25,27 +25,26 @@ body {
 
     @media #{$mq-1000-up} {
       display: grid;
-      // left: -12.4%;
       position: absolute;
-      // top: 41%;
-      left: -10.4%;
-      top: 42.6%;
-      width: 9.5rem;
+      left: -8.9%;
+      top: 41.6%;
+      width: 8.8rem;
       z-index: 99;
     }
     @media #{$mq-1100-up} {
-      left: -9.5%;
-      top: 42.1%;
+      left: -8.7%;
+      top: 41.2%;
+      width: 9rem;
     }
     @media #{$mq-1200-up} {
-      left: -8.8%;
-      top: 43.8%;
-      width: 9.5rem;
+      left: -8.4%;
+      top: 42.4%;
+      width: 9.3rem;
     }
     @media #{$mq-1300-up} {
-      left: -8%;
-      top: 43.3%;
-      width: 9.5rem;
+      left: -7.3%;
+      top: 42%;
+      width: 9rem;
     }
     @media #{$mq-1400-up} {
       // left: -8.8%;
@@ -61,6 +60,7 @@ body {
   width: 26.5em;
   padding: 2em;
   border-radius: 20px;
+  box-shadow: 11px 9px 27px -5px rgba(0, 0, 0, 0.48);
   transition: all 0.2s ease;
   @media #{$mq-1000-up} {
     background: url("../images/bg-pattern-desktop.svg");

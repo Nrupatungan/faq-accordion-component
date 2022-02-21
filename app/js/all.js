@@ -11,23 +11,17 @@ accordions.forEach(accordion => {
         update()
         accordion.classList.toggle('accordion-drop')
         console.log(accordion)
-        if(currentActive > 1){
-            currentActive = 0
-            update()
-        }
-        console.log(currentActive)
+        // if(currentActive > 1){
+        //     currentActive = 0
+        //     update()
+        // }
+        // console.log(currentActive)
     })
 })
-// accordions.forEach(accordion => {
-//     accordion.addEventListener('click', () => {
-//         update()
-//         accordion.classList.add('accordion-drop')
- 
-//     })
-// })
 
 function update(){
     accordions.forEach(accordion => {
+        // currentActive--
         accordion.classList.remove('accordion-drop')
     })
 }

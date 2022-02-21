@@ -12,10 +12,27 @@ body {
   @media #{$mq-1000-up} {
     text-align: left;
   }
+  @media #{$mq-1400-up} {
+    font-size: 3em;
+  }
 }
 .question {
   font-size: 1.12em;
+  @media #{$mq-1400-up} {
+    font-size: 1.18em;
+  }
 }
 .answer {
   font-size: 1em;
+  width: 16.5rem;
+  padding-right: 0.5rem;
+  @media #{$mq-1000-up} {
+    width: 17rem;
+  }
+  @media #{$mq-1200-up} {
+    width: 20rem;
+  }
+  @media #{$mq-1400-up} {
+    font-size: 1.1em;
+  }
 }

@@ -22,7 +22,7 @@ body {
   position: relative;
   .box {
     display: none;
-    animation: introSlide 1.9s forwards;
+    animation: introSlide 1.5s forwards;
     opacity: 0;
 
     @media #{$mq-1000-up} {
@@ -121,7 +121,7 @@ body {
       top: 22%;
       width: 24rem;
       z-index: 1;
-      animation: introSlide 1.5s forwards;
+      animation: introSlide 1s forwards;
       opacity: 0;
 
       @media #{$mq-1200-up} {

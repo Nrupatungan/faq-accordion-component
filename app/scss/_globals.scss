@@ -22,6 +22,8 @@ body {
   position: relative;
   .box {
     display: none;
+    animation: introSlide 1.9s forwards;
+    opacity: 0;
 
     @media #{$mq-1000-up} {
       display: grid;
@@ -91,11 +93,15 @@ body {
     top: -7.8rem;
     left: 9%;
     z-index: 1;
+    animation: introLoad 1s forwards;
+    opacity: 0;
   }
   .shadow {
     position: absolute;
     top: 0;
     left: 15%;
+    animation: introLoad 1s forwards;
+    opacity: 0;
   }
 
   @media #{$mq-1000-up} {
@@ -115,6 +121,8 @@ body {
       top: 22%;
       width: 24rem;
       z-index: 1;
+      animation: introSlide 1.5s forwards;
+      opacity: 0;
 
       @media #{$mq-1200-up} {
         left: -8%;

@@ -26,3 +26,27 @@ $mq-1400-up: "only screen and (min-width: 1400px)";
 
 $mq-640-vh-down: "only screen and (max-height: 640px)";
 $mq-768-vh-down: "only screen and (max-height: 768px)";
+
+//Animation
+@keyframes introLoad {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes introSlide {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
